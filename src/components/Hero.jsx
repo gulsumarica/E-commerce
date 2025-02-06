@@ -1,10 +1,11 @@
 import React from "react";
-import Slider from "./Slider";
+
+import MainSlider from "./MainSlider";
 
 function Hero() {
   return (
     <>
-      <Slider />
+      <MainSlider />
     </>
   );
 }

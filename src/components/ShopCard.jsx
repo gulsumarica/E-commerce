@@ -5,11 +5,11 @@ function ShopCard() {
     <div className="flex flex-col items-center gap-2 ">
       <div className="flex flex-col items-center m-4">
         <h2 className="font-bold text-3xl">EDITOR'S PICK</h2>
-        <p className="text-[#737373] w-52 font-thin text-center">
+        <p className="text-[#737373] w-52 font-thin text-center md:w-full">
           Problems trying to resolve the conflict between{" "}
         </p>
       </div>
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4 md:flex-row">
         <div className="bg-[url('/img/men.png')] w-11/12 h-96 bg-top flex items-end">
           <button className="bg-white text-3xl font-medium px-16 py-4 m-8">
             MEN

@@ -1,30 +1,61 @@
-import React, { useEffect } from "react";
-import feather from "feather-icons";
+import React from "react";
+import SliderLib from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-function Slider() {
-  useEffect(() => {
-    feather.replace();
-  }, []);
+function CustomArrow({ onClick, direction }) {
   return (
-    <div className=" sm:hidden bg-[url('/img/shop-hero-1-product-slide-1.png')] bg-center h-svh bg-cover text-white flex flex-col items-center justify-center gap-16 mx-0">
-      <h5 className="font-bold ">SUMMER 2020</h5>
-      <div className="flex flex-col items-center gap-8">
-        <h1 className="sm:hidden text-3xl font-bold w-44 text-center">
-          NEW COLLECTION
-        </h1>
-        <div className="flex justify-between w-screen ">
-          <button>
-            <i data-feather="chevron-left" className="text-4xl"></i>
-          </button>
-          <button>
-            <i data-feather="chevron-right" className="text-4xl"></i>
-          </button>
-        </div>
-        <h4 className="w-auto">
-          We know how large objects will act, but things on a small scale.
-        </h4>
-      </div>
-      <button className="bg-[#2DC071] px-8 py-4">SHOP NOW</button>
+    <button
+      className={`absolute z-50 text-white text-3xl font-bold flex items-center justify-center w-12 h-12 bg-black bg-opacity-50 rounded-full ${
+        direction === "prev" ? "left-4" : "right-4"
+      }`}
+      onClick={onClick}
+    >
+      {direction === "prev" ? "◀" : "▶"}
+    </button>
+  );
+}
+
+function Slider({ slides }) {
+  console.log(slides);
+  const settings = {
+    dots: false,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    prevArrow: <CustomArrow direction="prev" />,
+    nextArrow: <CustomArrow direction="next" />,
+  };
+  return (
+    <div className="relative flex items-center justify-center h-[400px] w-full">
+      <SliderLib {...settings}>
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className="relative flex justify-center items-center h-[400px] w-full"
+          >
+            {slide.image && (
+              <img
+                src={slide.image}
+                alt={`Slide ${index + 1}`}
+                className="absolute w-full h-full object-cover"
+              />
+            )}
+            <div className="relative z-10 text-white flex flex-col items-center justify-center h-[400px] w-full md:h-full  md:items-start ">
+              {slide.title && (
+                <h5 className="text-xs font-bold md:text-sm">{slide.title}</h5>
+              )}
+              {slide.subtitle && (
+                <h1 className="text-3xl font-semibold md:text-4xl">
+                  {slide.subtitle}
+                </h1>
+              )}
+              {slide.p && <h4 className="text-xs md:text-sm">{slide.p}</h4>}
+            </div>
+          </div>
+        ))}
+      </SliderLib>
     </div>
   );
 }

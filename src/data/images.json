@@ -1,42 +1,46 @@
-[
-  {
-    "id": 1,
-    "alt": "Image 1",
-    "src": "/img/product-cover-1.png"
-  },
-  {
-    "id": 2,
-    "alt": "Image 2",
-    "src": "/img/product-cover-2.png"
-  },
-  {
-    "id": 3,
-    "alt": "Image 3",
-    "src": "/img/product-cover-3.png"
-  },
-  {
-    "id": 4,
-    "alt": "Image 4",
-    "src": "/img/product-cover-4.png"
-  },
-  {
-    "id": 5,
-    "alt": "Image 5",
-    "src": "/img/product-cover-5.png"
-  },
-  {
-    "id": 6,
-    "alt": "Image 6",
-    "src": "/img/product-cover-6.png"
-  },
-  {
-    "id": 7,
-    "alt": "Image 7",
-    "src": "/img/product-cover-7.png"
-  },
-  {
-    "id": 8,
-    "alt": "Image 8",
-    "src": "/img/product-cover-8.png"
-  }
-]
+{
+  "grup1": [
+    {
+      "id": 1,
+      "alt": "Image 1",
+      "src": "/img/product-cover-1.png"
+    },
+    {
+      "id": 2,
+      "alt": "Image 2",
+      "src": "/img/product-cover-2.png"
+    },
+    {
+      "id": 3,
+      "alt": "Image 3",
+      "src": "/img/product-cover-3.png"
+    },
+    {
+      "id": 4,
+      "alt": "Image 4",
+      "src": "/img/product-cover-4.png"
+    }
+  ],
+  "grup2": [
+    {
+      "id": 1,
+      "alt": "Image 5",
+      "src": "/img/product-cover-5.png"
+    },
+    {
+      "id": 2,
+      "alt": "Image 6",
+      "src": "/img/product-cover-6.png"
+    },
+    {
+      "id": 3,
+      "alt": "Image 7",
+      "src": "/img/product-cover-7.png"
+    },
+    {
+      "id": 4,
+      "alt": "Image 8",
+      "src": "/img/product-cover-8.png"
+    }
+  ]
+}

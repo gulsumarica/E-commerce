@@ -10,7 +10,6 @@ import Blog from "../components/Blog";
 function PageContent() {
   return (
     <>
-      <Header />
       <Hero />
       <ProductCard />
       <ProductSlider />

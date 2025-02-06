@@ -1,0 +1,68 @@
+{
+  "ilkSira": [
+    {
+      "id": 1,
+      "alt": "shop1",
+      "src": "/img/product-cover-17.png"
+    },
+    {
+      "id": 2,
+      "alt": "shop2",
+      "src": "/img/product-cover-18.png"
+    },
+    {
+      "id": 3,
+      "alt": "shop3",
+      "src": "/img/product-cover-19.png"
+    },
+    {
+      "id": 4,
+      "alt": "shop4",
+      "src": "/img/product-cover-20.png"
+    }
+  ],
+  "ikinciSira": [
+    {
+      "id": 1,
+      "alt": "shop5",
+      "src": "/img/product-cover-9.png"
+    },
+    {
+      "id": 2,
+      "alt": "shop6",
+      "src": "/img/product-cover-10.png"
+    },
+    {
+      "id": 3,
+      "alt": "shop7",
+      "src": "/img/product-cover-11.png"
+    },
+    {
+      "id": 4,
+      "alt": "shop8",
+      "src": "/img/product-cover-12.png"
+    }
+  ],
+  "ucuncuSira": [
+    {
+      "id": 1,
+      "alt": "shop9",
+      "src": "/img/product-cover-13.png"
+    },
+    {
+      "id": 2,
+      "alt": "shop10",
+      "src": "/img/product-cover-14.png"
+    },
+    {
+      "id": 3,
+      "alt": "shop11",
+      "src": "/img/product-cover-15.png"
+    },
+    {
+      "id": 4,
+      "alt": "shop12",
+      "src": "/img/product-cover-16.png"
+    }
+  ]
+}
