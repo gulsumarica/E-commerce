@@ -1,15 +1,19 @@
 import React from "react";
 import shopImages from "../data/shopImages.json";
 import ProductDetail from "../components/ProductDetail";
+import { Link } from "react-router-dom";
 
 function ProductsShop() {
   return (
     <div className="flex flex-col">
-      <div className=" flex flex-col items-center justify-around md:flex md:flex-row ">
+      <Link
+        to="/detail"
+        className=" flex flex-col items-center justify-around md:flex md:flex-row "
+      >
         {shopImages.ilkSira.map((image) => (
           <ProductDetail key={image.key} image={image} />
         ))}
-      </div>
+      </Link>
       <div className=" flex flex-col items-center justify-around md:flex md:flex-row ">
         {shopImages.ikinciSira.map((image) => (
           <ProductDetail key={image.key} image={image} />

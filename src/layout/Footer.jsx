@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import feather from "feather-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   useEffect(() => {
@@ -8,7 +9,9 @@ function Footer() {
   return (
     <div className="flex flex-col items-center justify-around">
       <div className=" flex flex-col items-start justify-around p-16 w-full border-b md:flex-row md:justify-between md:px-36">
-        <h1 className="font-bold text-3xl">Bandage</h1>
+        <Link to="/home" className="font-bold text-3xl">
+          Bandage
+        </Link>
         <div className="flex items-center justify-center gap-2">
           <i data-feather="facebook" className="stroke-[#23A6F0] w-6 h-6"></i>
           <i data-feather="instagram" className="stroke-[#23A6F0] w-6 h-6"></i>

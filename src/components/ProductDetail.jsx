@@ -1,10 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function ProductDetail({ image }) {
+  const history = useHistory();
+
+  const handleDetail = () => {
+    history.push("/detail", { image });
+  };
   return (
     <div className="flex flex-col items-center">
-      <img src={image.src} alt={image.alt} />
+      <img src={image.src} alt={image.alt} onClick={handleDetail(image)} />
       <div className="flex flex-col gap-1 items-center">
         <h5 className="font-bold">Graphic Design</h5>
         <h6 className="text-[#737373]">English Department</h6>

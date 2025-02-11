@@ -83,7 +83,9 @@ function Header() {
       <header className="flex gap-4 m-4 items-center justify-around flex-col">
         {/* Masaüstü Header */}
         <div className="hidden md:flex items-center justify-between w-full h-full p-4">
-          <h1 className="font-bold text-xl">Bandage</h1>
+          <Link to="/home" className="font-bold text-xl">
+            Bandage
+          </Link>
           <nav className="flex items-center text-center gap-4">
             {renderNavItems()}
           </nav>
