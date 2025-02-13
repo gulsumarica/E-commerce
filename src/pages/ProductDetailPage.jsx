@@ -1,5 +1,4 @@
 import React from "react";
-import Detail from "../components/detail";
 
 function ProductDetailPage(props) {
   const image = props.location.state?.image;
@@ -34,7 +33,6 @@ function ProductDetailPage(props) {
             />
           </div>
         </div>
-        <Detail />
       </div>
     </div>
   );
